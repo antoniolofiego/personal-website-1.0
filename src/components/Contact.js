@@ -1,6 +1,5 @@
 import React from 'react';
 import { MdLocationCity } from 'react-icons/md';
-import { FiExternalLink } from 'react-icons/fi';
 import { AiOutlineMail } from 'react-icons/ai';
 
 const Contact = ({ field, value }) => (
