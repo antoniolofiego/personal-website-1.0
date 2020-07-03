@@ -22,19 +22,19 @@ const Header = ({ name, role, contacts }) => (
                     </h2>
                 </div>
             </div>
-            <div>
+            <div className='my-5 lg:my-0'>
                 <a
                     href='https://www.youracclaim.com/badges/f3973229-ab07-4804-a1cb-e83d746920f8/linked_in'
                     target='_blank'
                     rel='noreferrer'>
                     <img
-                        className='h-24 w-24'
+                        className='h-24 w-24 mx-auto'
                         src='./aws_ccp.png'
                         alt='AWS Certified Cloud Practitioner'
                     />
                 </a>
             </div>
-            <div className='flex flex-col mx-10 my-5 lg:my-0 lg:justify-center items-center lg:items-start'>
+            <div className='flex flex-col mx-10 lg:my-0 lg:justify-center items-center lg:items-start'>
                 {contacts &&
                     Object.keys(contacts).map((key) => (
                         <Contact key={key} field={key} value={contacts[key]} />
